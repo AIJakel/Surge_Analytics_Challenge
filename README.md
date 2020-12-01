@@ -15,5 +15,6 @@ Credit limit is saved across sessions with a cookie.
 
 # How to install locally
 1. Downlaod the repository.
-2. In the project directory run: `npm start`
+2. In the temrinal navigate to the project directory and run `npm install`.
+3. Then run: `npm start`.
 
