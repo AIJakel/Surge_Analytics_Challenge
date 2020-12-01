@@ -1,0 +1,41 @@
+.creditCheck {
+  margin: 1rem 10%;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+
+  &_body {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1 1 auto;
+  }
+
+  &_indicatorContainer {
+    height: 56px;
+    margin-left: 1rem;
+  }
+
+  &_indicator {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 12px;
+    border-radius: 50%;
+    background-color: green;
+
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    &_error {
+      background-color: red;
+      animation: blink-animation 1s steps(5, start) infinite;
+    }
+  }
+}

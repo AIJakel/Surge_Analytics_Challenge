@@ -1,0 +1,14 @@
+.salesOrder {
+  margin: 1rem 10%;
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+
+  &_total {
+    font-size: 1.2rem;
+  }
+
+  &_input {
+    margin: 1rem 0 0rem;
+  }
+}
